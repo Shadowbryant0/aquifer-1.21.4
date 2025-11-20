@@ -2,9 +2,11 @@ package net.shadow.aquifer;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.shadow.aquifer.components.AquiferDataComponentsType;
 import net.shadow.aquifer.items.AquiferItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import net.shadow.aquifer.entity.AquiferEntities;
 
 public class Aquifer implements ModInitializer {
 	public static final String MOD_ID = "aquifer";
@@ -20,6 +22,8 @@ public class Aquifer implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
         AquiferItems.registerAquiferItems();
+        AquiferEntities.registerModEntities();
+        AquiferDataComponentsType.regiserDataComponentypes();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

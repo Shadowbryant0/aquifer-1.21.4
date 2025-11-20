@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "aquifer:item/dragons_eye_pulling_1"
+  }
+}

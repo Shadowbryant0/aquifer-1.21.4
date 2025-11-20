@@ -3,9 +3,10 @@
 	"id": "aquifer",
 	"version": "${version}",
 	"name": "Aquifer",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds a bow that shoots under water and in the rain",
 	"authors": [
-		"Me!"
+		"ShadowBryant0",
+      "Errorz303"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,7 +21,10 @@
 		],
 		"fabric-datagen": [
 			"net.shadow.aquifer.AquiferDataGenerator"
-		]
+		],
+      "client": [
+        "net.shadow.aquifer.AquiferClient"
+      ]
 	},
 	"mixins": [
 		"aquifer.mixins.json"

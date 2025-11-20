@@ -1,14 +1,23 @@
 {
-	"required": true,
-	"package": "net.shadow.aquifer.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "net.shadow.aquifer.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AntiRespiration",
+    "AntiWaterBreathing",
+    "ExampleMixin",
+    "TouchingRainMixinDrag"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "CancleMouseScrollingMixin",
+    "InventoryOverlayMixin",
+    "InventoryOverlayMixincopy",
+    "NoInvKeysMixin"
+  ]
 }
